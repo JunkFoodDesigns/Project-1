@@ -8,17 +8,22 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Space Mono', monospace;
-  color: #f3f3f4;
+  color: #C1C1C2;
   background: #1e1f1f;
+  overflow-x: hidden;
 }
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #888896;
+  color: #3c3e3e;
 }
 a:hover {
-  color: #6633ff;
+  color: #f6c354;
+}
+.link {
+  text-decoration: none;
+  color: #AFBDE9;
 }
 
 /* Section Styles */
@@ -27,9 +32,10 @@ a:hover {
   width: 100%;
   background: #1e1f1f;
   min-height: 30px;
-  padding: 10px;
+  padding: 20px 10px;
   position: fixed;
   text-align: center;
+  top: 0;
 }
 .nav {
   display: flex;
@@ -43,10 +49,12 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
+    text-transform: uppercase;
+    text-align: left;
     color: #f6c354;
 }
 .nav li {
-  padding: 5px 10px 10px 10px;
+  padding: 5px 20px 10px 15px;
 }
 .nav a {
   transition: all .5s;
@@ -57,29 +65,45 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/backgroundC-compressedBW.jpg') no-repeat center ;
+  overflow: hidden;
+  padding-top: 50px;
+}
+header.home {
+  background: url('images/backgroundC_v2-30.jpg') no-repeat center;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 85px;
+  line-height: 1.25;
 }
-header {
-  line-height: 1.5;
+header.experience {
+  background: url('images/winding-road-BW2.jpg') no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 85px;
+  line-height: 1.25;
+}
+header.ambitions {
+  background: url('images/night-sky_cropped2.jpg') no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 85px;
+  line-height: 1.25;
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
-  border: 3px solid #3c3e3e;
+  border: 2.5px solid #3c3e3e;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.075)rotate(2deg);
+  transform: scale(1.075)rotate(360deg);
 }
 .tag {
   background-color: #282a2a;
-  color: #6a7fdb;
-  padding: 10px;
+  color: #6C7CC4;
+  padding: 10px 20px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
@@ -87,42 +111,74 @@ header .profile-image:hover {
 .location {
   background-color: #1e1f1f;
   color: #f3f3f4;
-  opacity: .75;
 }
+
+/* Card Styles */
 .card {
-  margin: 30px;
+  margin: 15px 0px 30px 0px;
   padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
+  width: 90%;
+  max-width: 900px;
+  min-width: 300px;
+  text-align: center;
   background: #323434;
-  opacity: .9;
-  border-bottom: 4px solid #282a2a;
+  border-bottom: 4px solid #1e1f1f;
   border-radius: 6px;
-  transition: all .5s;
+  transition: all .25s;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card:hover {
-  border-color: #f6c354;
+  border-color: #282a2a;
+  opacity: 1;
 }
-
-ul.skills {
+.card2 {
+  margin: 15px 0px 30px 0px;
+  padding: 20px 40px 40px;
+  width: 90%;
+  max-width: 900px;
+  min-width: 300px;
+  text-align: left;
+  background: #323434;  
+  border-bottom: 4px solid #282a2a;
+  border-radius: 6px;
+  transition: all .25s;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card2:hover {
+  border-color: #f6c354;
+  opacity: 1;
+}
+ul.skills, ul.hard-skills, ul.soft-skills {
   padding: 0;
   text-align: center;
+  font-size: .8em;
 }
 
-.skills li {
-  border-radius: 5px;
+.skills li, .hard-skills li, .soft-skills li {
+  border-radius: 4px;
   display: inline-block;
-  background: #6a7fdb;
   color: #f3f3f4;
-  padding: 5px 7.5px;
-  margin: 5px 1px;
+  padding: 5px 10px;
+  margin: 1px 1px 0px 1px;
 }
 
-.skills li:hover {
-  transform: scale(1.05);
-  transition: all .2s;
+.skills li, .hard-skills li {
+  background-color: #6C7CC4;
 }
-
+.soft-skills li {
+  background-color: #282a2a;
+}
+.skills li:hover, .hard-skills li:hover, .soft-skills li:hover {
+  transition: all 0.15s;
+  transform: scale(1.03);
+}
+ul.ambitions {
+text-align: left;
+padding-left: 30px;
+}
+/* Footer Styles */
 footer {
   width: 100%;
   min-height: 30px;
@@ -144,40 +200,40 @@ footer ul li {
   display: inline-block;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0 20px -17px;
+}
+
+.copyright {
+  margin: 20px 0 20px -17px;
+}
+
 a.social {
   display: inline-block;
   text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
   opacity: .5;
   transition: all .5s;
 }
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
+
 a.github {
   background-image: url(images/github.svg);
 }
+
 a.social:hover {
   opacity: 1;
+  transform: scale(1.1);
 }
-.clearfix {
-  clear: both;
-}
-
-/* Styles for larger screens */
-@media screen and (min-width: 720px) {
-  
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
-  }
 
   header {
     min-height: 470px;
@@ -201,8 +257,5 @@ a.social:hover {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
-    color: #888896;
+    color: #3c3e3e;
   }
-
-}
-
