@@ -12,22 +12,21 @@ body {
   background: #1e1f1f;
   overflow-x: hidden;
 }
-/* Link Styles */
 
+/* Link Styles */
 a {
   text-decoration: none;
   color: #3c3e3e;
 }
 a:hover {
-  color: #f6c354;
+  color: #6C7CC4;
 }
 .link {
   text-decoration: none;
-  color: #AFBDE9;
+  color: #F2CC79;
 }
 
 /* Section Styles */
-
 .main-nav {
   width: 100%;
   background: #1e1f1f;
@@ -42,8 +41,8 @@ a:hover {
   justify-content: space-around;
   font-weight: 700;
   list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0px auto;
+  padding: 0px;
 }
 
 .nav .name {
@@ -60,7 +59,7 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: #f6c354
+  color: #f6c354;
 }
 
 header {
@@ -76,21 +75,21 @@ header.home {
   line-height: 1.25;
 }
 header.experience {
-  background: url('images/winding-road-BW2.jpg') no-repeat center;
+  background: url('images/winding-road3b.jpg') no-repeat center;
   background-size: cover;
   overflow: hidden;
   padding-top: 85px;
   line-height: 1.25;
 }
 header.ambitions {
-  background: url('images/night-sky_cropped2.jpg') no-repeat center;
+  background: url('images/night-sky2_BW.jpg') no-repeat center;
   background-size: cover;
   overflow: hidden;
   padding-top: 85px;
   line-height: 1.25;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 75px;
   width: 135px;
   height: 135px;
   border-radius: 50%;
@@ -98,70 +97,111 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.075)rotate(360deg);
+  transform: scale(1.075)rotate(360deg);  
 }
-.tag {
-  background-color: #282a2a;
+.quote {
+  max-width: 500px;
+  margin: 20px auto 0px;
+  padding: 10px 20px;
+  background-color: #1e1f1f;
+  display: table;
+  border-radius: 5px;
+  color: #C1C1C2;
+  font-size: 80%;  
+}
+.quote-author {
+  margin: 5px auto;
+  padding: 7px 12px;
+  display: table;
+  border-radius: 5px;
+  background-color: #1e1f1f;
   color: #6C7CC4;
+  font-size: 65%;
+  font-style: italic;
+}
+.greeting {
+  background-color: #1e1f1f;
+  color: #C1C1C2;
   padding: 10px 20px;
   border-radius: 5px;
   display: table;
-  margin: 10px auto;
+  margin: 11px auto;
+  font-weight: 500;
 } 
 .location {
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: table;
+  margin: 11px auto;
   background-color: #1e1f1f;
-  color: #f3f3f4;
+  color: #6C7CC4;
+  font-size: 80%;
 }
 
 /* Card Styles */
 .card {
-  margin: 15px 0px 30px 0px;
-  padding: 20px 40px 40px;
+  margin: 30px auto;
+  padding: 20px 75px 40px;
   width: 90%;
-  max-width: 900px;
+  max-width: 750px;
   min-width: 300px;
   text-align: center;
   background: #323434;
   border-bottom: 4px solid #1e1f1f;
   border-radius: 6px;
   transition: all .25s;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 .card:hover {
   border-color: #282a2a;
   opacity: 1;
 }
+.card h2 {
+  color: #707070;
+  font-weight: 500;
+}
 .card2 {
-  margin: 15px 0px 30px 0px;
-  padding: 20px 40px 40px;
+  margin: 30px auto;
+  padding: 20px 75px 40px;
   width: 90%;
-  max-width: 900px;
+  max-width: 750px;
   min-width: 300px;
   text-align: left;
   background: #323434;  
   border-bottom: 4px solid #282a2a;
   border-radius: 6px;
   transition: all .25s;
-  margin-left: auto;
-  margin-right: auto;
 }
 .card2:hover {
   border-color: #f6c354;
   opacity: 1;
 }
-ul.skills, ul.hard-skills, ul.soft-skills {
-  padding: 0;
+.ambitions-intro {
   text-align: center;
-  font-size: .8em;
+}
+.card2 h2 {
+  color: #707070;
+  font-weight: 500;
+  margin: 20px auto 0px auto;
+}
+h2.subtitle {
+  color:#707070;
+  font-size: 99%;
+  margin: 5px auto 25px;
+}
+ul.skills, ul.hard-skills, ul.soft-skills {
+  padding: 0px 30px;
+  margin: 5px auto;
+  text-align: center;
+  font-size: 80%;
 }
 
 .skills li, .hard-skills li, .soft-skills li {
   border-radius: 4px;
   display: inline-block;
+  padding: 3px 9px;
+  margin: 3px 1px 2px;
   color: #f3f3f4;
-  padding: 5px 10px;
-  margin: 1px 1px 0px 1px;
 }
 
 .skills li, .hard-skills li {
@@ -169,6 +209,7 @@ ul.skills, ul.hard-skills, ul.soft-skills {
 }
 .soft-skills li {
   background-color: #282a2a;
+  color:#C1C1C2;
 }
 .skills li:hover, .hard-skills li:hover, .soft-skills li:hover {
   transition: all 0.15s;
@@ -177,6 +218,9 @@ ul.skills, ul.hard-skills, ul.soft-skills {
 ul.ambitions {
 text-align: left;
 padding-left: 30px;
+}
+.ambitions li {
+  margin-bottom: 8px;
 }
 /* Footer Styles */
 footer {
@@ -210,6 +254,8 @@ footer ul li {
 
 .copyright {
   margin: 20px 0 20px -17px;
+  color: #000000;
+  opacity: .4;
 }
 
 a.social {
@@ -218,16 +264,16 @@ a.social {
   width: 40px;
   height: 40px;
   background-size: 40px 40px;
-  opacity: .5;
+  opacity: .25;
   transition: all .5s;
 }
 
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(images/iconmonstr-linkedin-4.svg);
 }
 
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(images/iconmonstr-github-4.svg);
 }
 
 a.social:hover {
@@ -241,12 +287,11 @@ a.social:hover {
 
   .nav {
     max-width: 1200px;
-    padding: 0 30px;
+    padding: 0px 30px;
   }
 
-
   main {
-    padding-top: 20px;
+    padding-top: 25px;
   }
 
   main p {
